@@ -1,0 +1,351 @@
+
+<!doctype html>
+<html>
+<head>
+<title>J.A.R.V.I.S.</title>
+ <link rel="stylesheet" href="style.css">
+
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+     <script>
+           console.log =() =>{}
+           console.error =() =>{}
+        </script>  
+        <script src='https://code.responsivevoice.org/responsivevoice.js'></script> 
+    </head>
+    <body >
+        
+        <input id="input"placeholder="chat with me...">
+        <button id="bu" onclick="a()"><i class="fa fa-send-o"></i></button>
+   
+ <script>
+
+
+
+
+
+window.onload = function() {
+ responsiveVoice.speak(
+  "Now me to introduce myself. I am Jarvis .The virtual Artificial intelligence.And I am here to assist you with the variety of tasks is the best i can , twenty four hours a day and seven day in a week.System is now fully operational. welcome back sir. what can i do for you",
+  "UK English Male", {
+   rate: 1.0,
+   volume: 5,
+   pitch: 1.0
+  });
+};
+
+function a() {
+ var ans = document
+  .getElementById("input").value
+  .toLowerCase();
+ if (ans.match("hello") || ans
+  .match("hi") || ans.match(
+   "hii") || ans.match("hey")) {
+  b = "hi, how are you?";
+ } else if (ans.match(
+   "thanks") || ans.match(
+   "thank you")) {
+  b = "Your most welcome"
+ } else if (ans.match(
+   "your name") || ans.match(
+   "What Is Your name") || ans.match(
+   "who r u") || ans.match(
+   "who are you")) {
+  b = "I am Jarvis.The virtual Artificial intelligence.And I am here to assist you with the variety of tasks is the best i can. ";
+ } else if (ans.match(
+  "Your owner") ||
+  ans.match("created") || ans
+  .match("who made you")) {
+  b =
+   "i was created by Mr. Abhinav Aarya";
+ } else if (ans.match(
+   "how are you") || ans.match(
+   "how r u")) {
+  b = "fine,Thanks For Asking and you??";
+ } else if (ans.match(
+   "how going") || ans.match(" whatsapp")) {
+  b = "good";
+ } else if (ans.match(
+   "where do you live") || ans.match(
+   "you live")) {
+  b = "in Your Device  And Your Heart'";
+ } else if (ans.match(
+   "What Are You doing") || ans.match(
+   "you doing")) {
+  b = "chatting with you";
+ } else if (ans.match("fine")) {
+  b = "good";
+ } else if (ans.match(
+   "what do you like") || ans.match(
+   "you like")) {
+  b = "I like to help you";
+ } else if (ans.match(
+   "be my friend")) {
+  b = "that okay from me";
+ } else if (ans.match(
+   "whats going on")) {
+  b = "i am trying to help you";
+ } else if (ans.match(
+   "Your hobbies") || ans.match(
+   "your hobb")) {
+  b = "helping my sir and you";
+ } else if (ans.match("good") ||
+  ans.match("awesome") || ans
+  .match("wonderful") || ans
+  .match("outstanding") || ans
+  .match("brilliant")) {
+  b = "thanks alot";
+ } else if (ans.match(
+   "what Your age") || ans.match(
+   "your age") || ans.match(
+   "old are you") || ans.match(
+   "old r u")) {
+  b = "I am not a human";
+ } else if (ans.match("ok") ||
+  ans.match("ohk") || ans.match(
+   "okay")) {
+  b = "enough";
+ } else if (ans.match("my") ||
+  ans.match("me")) {
+  b = "Sorry,I dont know you";
+ } else if (ans.match(
+   "who is Abhinav")) {
+  b =
+   "he is my Everything And he only made me";
+ } else if (ans.match("bye") ||
+  ans.match("see u") || ans
+  .match("see you") || ans
+  .match(
+   "talk to you ") || ans.match(
+   "talk to u later")) {
+  b = "see you";
+ } else if (ans.match(
+   "about Urself") || ans.match(
+   "about yourself") || ans
+  .match("about You") || ans.match("About U")) {
+  b =
+   "i am JARVIS The intelligent robot. created by abhinav to assist and help him";
+ } else if (ans.match(
+   "can we meet") || ans.match(
+   "v meet") || ans.match(
+   "lets meet")) {
+  b =
+   "okay, lets meet in the computer hard disk";
+ } else {
+  b =
+   "Sorry,I can't understand you";
+
+ };
+ responsiveVoice.speak(b,
+  "UK English Male", {
+   rate: 1.0,
+   volume: 1,
+   pitch: 1.0
+  });
+ document.getElementById(
+   "input")
+  .value = "";
+}
+
+ </script>
+ <style>
+body {
+background-image:url(https://dl.dropbox.com/s/kugoiw1or5bokgb/1654592791671.gif?dl=0);
+background-position:center;
+background-attachment:fixed;
+background-repeat:no-repeat ;
+background-size:cover;
+margin-left:35%;
+    background-color:skyblue;
+}
+main{
+    position:relative;
+    top:100px;
+}
+.id {
+    background-color:black;
+    border:1px solid grey;
+    margin:20px 20px 20px 20px ;
+    border-radius:20px 20px 20px 20px;
+    color:#3f7;
+      .mouth{position:relative;
+left:35px;
+top:20px;
+    height:10px;
+    width:20px;
+    border-radius:0 0 50px 50px;
+    background-color:#3f7;
+    transform:rotate(-45deg); 
+}
+.earl{position:absolute ;
+left:5px;
+top:65px;
+    height:30px;
+    width:10px;
+    border-radius:100%;
+    background-color:#333;
+    transform:rotate(-45deg);
+}
+.earr{position:absolute ;
+left:75px;
+top:-5px;
+    height:30px;
+    width:10px;
+    border-radius:100%;
+    background-color:#333;
+    transform:rotate(-45deg);
+}
+.eyel{position:relative;
+left:10px;
+top:40px;
+    height:10px;
+    width:10px;
+    border-radius:100%;
+    background-color:#3f7;
+    animation:eye 2s infinite linear;    
+}
+.eyer{position:relative;
+left:40px;
+top:0px;
+    height:10px;
+    width:10px;
+    border-radius:100%;
+    background-color:#3f7;
+    animation:eye 2s infinite linear;
+}
+.face{width:60px;
+background-color:black;
+   height:60px; 
+   border-radius:200% 100% 100% 100%;
+    
+}
+.head{width:80px;
+padding-left:10px;
+padding-top:10px;
+background-color:silver;
+   height:80px; 
+   left:18px;
+   top:10px;
+   z-index:1;
+   animation:head 2s 0.2s infinite linear ;
+   position:relative ;
+   transform:rotate(45deg);
+   background:linear-gradient(45deg, #bbb , silver,gray);
+   box-shadow:inset 10px 10px 10px silver,inset -10px -10px 10px gray,
+0px 0px 10px 0px black;
+   border-radius:80% 40% 100% 40%;
+}
+
+}
+
+.a{  position:absolute ;
+box-shadow:inset 10px 10px 10px silver,inset -10px -10px 10px gray,
+0px 0px 10px 0px black;
+height:180px;
+width:125px;
+top:85px;
+animation:a 2s infinite linear;
+background:linear-gradient(180deg, silver,#bbb ,gray);
+border-radius:80% 80% 90% 90%;
+}
+.neck{margin-top:2px;
+    height:20px;
+    width:60px;   
+    background:#333;
+    overflow:hidden;
+    border-radius:50% ;
+}
+.lhand{position:absolute ;
+    transform:rotate(20deg);
+    height:100px;
+    width:30px;
+    top:25px;
+    left:-20px;
+    border-radius: 50%  ;
+       background: #333; 
+}
+.rhand{position:absolute ;
+    transform:rotate(-20deg);
+    height:100px;
+    width:30px;
+    top:25px;
+    left:115px;
+    border-radius:50% ;
+       background: #333; 
+    
+}
+.elbowl{
+    position:relative;
+    height:50px;
+    width:15px;
+    top:25%;
+    left:-10px;
+    border-radius: 50%  ;
+       background: linear-gradient(90deg, gray, silver ); 
+
+}
+.elbowr{
+    position:relative;
+    height:50px;
+    width:15px;
+    top:25%;
+    left:10px;
+    border-radius: 50%  ;
+       background: linear-gradient(90deg, silver , grey); 
+
+}
+.box{margin-top:10px;
+    height:30px;
+    width:30px;
+    border-radius:50%;
+    box-shadow: 0 0 5px 0 #fff,  0 0 35px 10px #0073e6;
+    background:white;
+}
+.fa-gear{font-size:40px;
+margin-top:0px;
+color:grey;    
+}
+@keyframes a{
+    from{top:85px;}
+    50%{top:100px;}
+    to{top:85px;}
+}
+@keyframes head{
+    from{top:10px;}
+    50%{top:25px;}
+    to{top:10px;}
+}
+@keyframes eye{
+    from{transform:rotateY(0deg) ;
+    }
+    to{transform:rotateY(60deg);}
+    
+}
+
+input{
+    position:fixed;
+    left:10px;
+    bottom:10px;
+    width:75%;
+    height:40px;
+    outline:none;
+    z-index:2;
+    border:1px solid black;
+}
+button{
+    position:fixed;
+    bottom:10px;
+    width:20%;
+    right:10px;
+    height:44px;
+    border:1px solid black;
+    outline:none;
+    background:#37f;
+    font-size:25px;
+    color:white;
+}
+
+ </style>
+</body>
+</html>
